@@ -1,6 +1,12 @@
-even_or_odd = int(input("Please enter a number: "))
+def even_or_odd(number):
+    if number % 2 == 0:
+        return "The number is even."
+    else:
+        return "The number is odd."
 
-if even_or_odd % 2 == 0:
-    print("The number is even")
-else:
-    print("The number is odd")
+def main():
+    num = int(input("Enter a number: "))
+    result = even_or_odd(num)
+    print(result)
+
+main()
